@@ -12,7 +12,7 @@ import { createContext , useState, useEffect } from "react";
 import {PostData} from "./assests/data/PostData";
 import {UserData} from "./assests/data/UserData";
 import {ReelsData} from "./assests/data/ReelsData";
-import Sasiprofile from "./assests/images/sasiprofile.jpeg";
+import Sasiprofile from "./assests/images/sai_profile.jpeg";
 import Sasicover from "./assests/images/sasicover.jpeg";
 import hoyyoda from "./assests/hoyoda.mp3";
 import "./App.css";
@@ -42,9 +42,9 @@ function App() {
   const [leftnavbar,setLeftNavBar] = useState(false);
   const [theme,setTheme] = useState("light")
   const [user,setUser] = useState({
-        username:"Sasi",
-        email:"sasi@gmail.com",
-        password:"sasi123",
+        username:"Sai",
+        email:"sai@gmail.com",
+        password:"sai123",
         profilepic:Sasiprofile,
         coverpic:Sasicover,
         profilemusic:hoyyoda
@@ -162,7 +162,7 @@ function App() {
             </div>} 
       </div>
       <Routes>
-        <Route path="/swipeup-socialmedia/" exact element={<Login />}/>
+        <Route path="/swipeup/" exact element={<Login />}/>
         <Route path="/" exact element={<><NavTop /><Home /></>}/>
         <Route path="/friends" exact element={<><NavTop /><AddFriends /></>}/>
         <Route path="/profile" exact element={<><NavTop /><UserProfile /></>}/>
